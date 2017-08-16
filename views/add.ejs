@@ -1,0 +1,16 @@
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/articles/list">Articles</a></li>
+    <li class="breadcrumb-item active">Add</li>
+</ol>
+<h1 class="display-4">Add Article</h1>
+<form method="post" action="/articles/create">
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" name="title" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="body">Body</label>
+        <textarea name="body" class="form-control"></textarea>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary">
+</form>
