@@ -8,6 +8,8 @@ a [Sails](http://sailsjs.org) CRUD application to manage articles
 ## Usage
 
 ### Instalar MongoDB
+[Descargar MongoDB](https://www.mongodb.com/download-center)
+Siguiente siguiente siguiente...
 
 ### Installation
 
