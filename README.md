@@ -30,7 +30,7 @@ To serve in the browser
 $ sails lift
 ```
 
-###Para que se actualice en el servidor solo con cada modificación
+### Para que se actualice en el servidor solo con cada modificación
 ```sh
 $ npm install -g nodemon
 ```
