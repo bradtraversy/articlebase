@@ -29,3 +29,12 @@ To serve in the browser
 ```sh
 $ sails lift
 ```
+
+###Para que se actualice en el servidor solo con cada modificación
+```sh
+$ npm install -g nodemon
+```
+
+```sh
+$ nodemon app.js
+```
