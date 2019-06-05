@@ -49,6 +49,15 @@ module.exports = {
             res.view('edit', {article:article});
         });
     },
+		details: function(req, res){
+				Articles.findOne({id:req.params.id}).exec(function(err, article){
+						if(err){
+								res.send(500, {error: 'Database Error'});
+						}
+
+						res.view('details', {article:article});
+				});
+		},
     update: function(req, res){
         var title = req.body.title;
         var body = req.body.body;
@@ -64,4 +73,3 @@ module.exports = {
         return false;
     }
 };
-

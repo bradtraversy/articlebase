@@ -1,9 +1,9 @@
-<h1 class="display-4">Articles</h1>
+<h1>Noticias</h1>
 <table class="table table-striped">
     <thead>
         <tr>
-            <th>#</th>
-            <th>Title</th>
+            <th>#ID</th>
+            <th>Título</th>
             <th></th>
         </tr>
     </thead>
@@ -13,9 +13,10 @@
                 <td><%= article.id %></td>
                 <td><%= article.title %></td>
                 <td>
-                    <a href="/articles/edit/<%= article.id %>" class="btn btn-primary">Edit</a>
+                    <a href="/articles/details/<%= article.id %>">Leer</a>
+                    <a href="/articles/edit/<%= article.id %>">Editar</a>
                     <form class="d-inline" action="/articles/delete/<%= article.id %>" method="post">
-                        <input type="submit" value="Delete" class="btn btn-danger">
+                        <input type="submit" value="Eliminar" class="btn btn-danger">
                     </form>
                 </td>
             </tr>
